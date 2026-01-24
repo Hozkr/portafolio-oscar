@@ -80,6 +80,12 @@
         const action = btn.dataset.action;
 
         switch (action) {
+
+            case 'close-menu':
+                closeMenu();
+                accToggle.focus();
+                break;
+
             case 'increase-font':
                 body.classList.remove('font-small');
                 body.classList.add('font-large');

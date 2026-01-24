@@ -12,6 +12,15 @@
     --font-body: 'Raleway', sans-serif;
 }
 
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('../fonts/open-dyslexic/OpenDyslexic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 [data-theme="dark"] {
     --color-text: #EFEFEF;
     --color-bg: #262626;
@@ -421,7 +430,7 @@ section {
 
 /* Accesibilidad teclado */
 .project-card:focus-visible {
-    outline: 3px solid var(--color-accent);
+    outline: 6px solid var(--color-accent);
     outline-offset: 4px;
 }
 
@@ -572,7 +581,7 @@ footer {
 }
 
 .accessibility__menu button:focus-visible {
-    outline: 3px solid var(--color-accent);
+    outline: 6px solid var(--color-accent);
 }
 
 .accessibility__menu[hidden] {
@@ -599,9 +608,22 @@ body.font-small {
     font-size: 87.5%;
 }
 
+
+
+
 body.font-dyslexia {
-    font-family: Arial, sans-serif;
+    font-family: 'OpenDyslexic', Arial, sans-serif;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
 }
+
+
+body.font-dyslexia p,
+body.font-dyslexia li,
+body.font-dyslexia article {
+    font-family: 'OpenDyslexic', Arial, sans-serif;
+}
+
 
 
 
@@ -613,6 +635,7 @@ body.font-dyslexia {
     .navbar {
         height: 80px;
         padding: 1rem 4vw;
+        margin-top: 15px;
     }
 
     .navbar__name {
