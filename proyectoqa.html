@@ -82,36 +82,52 @@
     <!-- =========================
          HERO
     ========================= -->
-    <section class="case-hero"
-        style="background-image: url('https://github.com/Hozkr/Assets/blob/main/EMPIRE%20OF%20THE%20CLANS/Portada.webp?raw=true');">
-        <div id="logo"
-            style="background-image: url('https://github.com/Hozkr/Assets/blob/main/EMPIRE%20OF%20THE%20CLANS/Logo.webp?raw=true');">
+    <section class="case-hero">
+        <p class="hero-eyebrow" tabindex="0" data-i18n="heroEyebrow">Ejercicio de portafolio</p>
+
+
+        <div class="hero-content">
+            <h1 class="hero-title" tabindex="0" data-i18n="heroTitle">
+                Quality Assurance
+            </h1>
+
+            <h2 class="hero-subtitle" tabindex="0" data-i18n="heroSubtitle">
+                Visual y funcional
+            </h2>
+
+            <p class="hero-client accent" tabindex="0" data-i18n="heroClient">
+                Farmacias Similares
+            </p>
         </div>
+
+
+        <small class="hero-disclaimer" data-i18n="heroDisclaimer">
+            Este proyecto es un ejercicio de portafolio y no representa una colaboración oficial con la empresa
+            mencionada.
+        </small>
+
     </section>
 
     <!-- =========================
          IFRAME / PROTOTIPO
     ========================= -->
-    <section class="project-embed" aria-labelledby="pdf-title">
-        <h2 id="pdf-title" class="visually-hidden">
-            Previsualización de auditoría QA visual y funcional
-        </h2>
+    <main>
+        <section class="project-embed" aria-labelledby="pdf-title">
+            <h2 data-i18n="previewIframe" tabindex="0">
+                Previsualización de auditoría QA visual y funcional
+            </h2>
 
-        <iframe src="Ejemplo de auditoría.pdf" title="Ejemplo de auditoría QA visual y funcional en formato PDF"
-            loading="lazy"></iframe>
+            <iframe>aslkdads</iframe>
 
-        <p class="pdf-fallback">
-            Si no puedes visualizar el PDF,
-            <a href="Ejemplo de auditoría.pdf" target="_blank" rel="noopener">
-                ábrelo en una nueva pestaña
-            </a>.
-        </p>
-    </section>
+
+        </section>
+    </main>
     <!-- =========================
          TOGGLE PROCESO
     ========================= -->
     <section class="process-toggle">
-        <button class="case-button" id="toggleProcess" aria-expanded="false" aria-controls="processContent">
+        <button class="case-button" id="toggleProcess" aria-expanded="false" aria-controls="processContent"
+            tabindex="0">
             Ver proceso
         </button>
     </section>
@@ -124,38 +140,142 @@
 
 
         <section class="case-section">
-            <h2>User Personas</h2>
-            <img src="https://github.com/Hozkr/Assets/blob/main/EMPIRE%20OF%20THE%20CLANS/Ficha%20persona%202.webp?raw=true"
-                alt="User persona principal">
-            <p>
-                Se desarrollaron User Personas para explorar intereses, influencias, metas, necesidades y expectativas,
-                así como motivaciones y principales puntos de frustración de los jugadores. Los usuarios meta son
-                principalmente mexicanos, aunque el diseño se pensó para que pudiera extenderse a Latinoamérica,
-                asegurando una experiencia intuitiva, coherente y adaptada a sus contextos culturales.
+            <h2 data-i18n="caseHeroTitle" tabindex="0">Areas de oportunidad en el hero</h2>
+            <img src="https://github.com/Hozkr/Assets/blob/main/Simi/Simi%20ejemplo%201.webp?raw=true"
+                alt="Demostración de hero con señaleticas">
+            <p data-i18n="caseHeroTitle1" tabindex="0">
+                En este apartado se identifican diversas <strong>áreas de oportunidad</strong>. Actualmente, coexisten
+                <strong>tres elementos con comportamiento de <em>hero</em></strong>, lo que, sin ser una
+                <strong>falla crítica</strong>, introduce <strong>fricción cognitiva</strong> y
+                <strong>ambigüedad en la jerarquía visual</strong>, afectando la claridad del mensaje principal.
+
+                De acuerdo con la <strong>Ley de Jakob</strong>, los usuarios confían más en interfaces cuyos
+                <strong>patrones de diseño</strong> son consistentes con experiencias previamente conocidas; múltiples
+                puntos de
+                énfasis compiten por la atención y diluyen el objetivo de la sección.
+                Se recomienda <strong>consolidar la comunicación en un único <em>hero</em></strong>, logrando una
+                <strong>jerarquización clara del contenido</strong> y una <strong>síntesis más efectiva de la
+                    información
+                    clave</strong>, lo que favorece una <strong>toma de decisiones más rápida y predecible</strong>.
             </p>
+
         </section>
 
 
         <section class="case-section">
-            <h2>Diagrama de flujo</h2>
-            <img src="https://github.com/Hozkr/Assets/blob/main/EMPIRE%20OF%20THE%20CLANS/diagrama.webp?raw=true"
+            <h2 data-i18n="caseAccessibilityTitle" tabindex="0">Accesibilidad y contraste</h2>
+            <img src="https://github.com/Hozkr/Assets/blob/main/Simi/Simi%20ejemplo%202.webp?raw=true"
                 alt="Mapa de experiencia del usuario">
-            <p>
-                Se creó un diagrama de flujo que muestra toda la secuencia de interacciones posibles en el videojuego,
-                similar a la navegación de una página web. Esto permite visualizar cómo el usuario se mueve entre
-                pantallas, acciones y decisiones, detectar posibles confusiones y asegurar que la experiencia sea
-                lógica, fluida y fácil de seguir.
+            <p data-i18n="caseAccessibilityTitle1" tabindex="0">
+                En el <strong>hero</strong> se identifican elementos con <strong>bajo nivel de contraste</strong>, lo
+                que impacta
+                directamente la <strong>visibilidad</strong> y la <strong>accesibilidad</strong> del contenido. Un caso
+                puntual son
+                los <strong>botones laterales</strong>, donde el uso de <strong>tonos grises sobre fondos
+                    claros</strong> no cumple
+                con el <strong>nivel AA de las WCAG</strong>.
+
+                Si bien esto no representa una <strong>infracción crítica</strong> en el contexto actual, sí implica un
+                <strong>riesgo potencial</strong> en escenarios con alcance a <strong>Estados Unidos</strong> o la
+                <strong>Unión Europea</strong>, además de limitar el acceso a usuarios con <strong>discapacidad
+                    visual</strong>.
+
+                Se recomienda <strong>ajustar la paleta cromática</strong> y los
+                <strong>estados visuales de los controles interactivos</strong> para cumplir con el
+                <strong>estándar WCAG AA</strong>, reduciendo riesgos y mejorando la
+                <strong>experiencia de usuario</strong>.
             </p>
+
         </section>
 
         <section class="case-section">
-            <h2>Wireframes</h2>
-            <img src="wireframes.jpg" alt="Wireframes del proyecto">
-            <p>
-                Se diseñaron wireframes para estructurar visualmente cada pantalla del videojuego, definiendo la
-                disposición de elementos, navegación y jerarquía de información sin centrarse en colores o estilos
-                finales. Esto permitió probar la lógica y flujo de la interfaz antes de pasar al diseño visual.
+            <h2 data-i18n="caseConsistencyTitle" tabindex="0">Consistencia visual</h2>
+            <img src="https://github.com/Hozkr/Assets/blob/main/Simi/Simi%20ejemplo%203.webp?raw=true"
+                alt="Wireframes del proyecto">
+            <p data-i18n="caseConsistencyTitle1" tabindex="0">
+                Este elemento no mantiene <strong>consistencia visual</strong> con el diseño del <strong>hero</strong>,
+                ya que
+                incorpora un <strong><em>drop shadow</em></strong> debajo del carrusel que no está presente en el resto
+                de los
+                componentes del mismo bloque.
             </p>
+
+
+        </section>
+
+        <section class="case-section">
+            <h2 data-i18n="caseFooterTitle" tabindex="0">Contraste y actualizaciones</h2>
+            <img src="https://github.com/Hozkr/Assets/blob/main/Simi/Simi%20ejemplo%204.webp?raw=true"
+                alt="Wireframes del proyecto">
+            <p data-i18n="caseFooterTitle1" tabindex="0">
+                Finalmente, se observa que la <strong>última fecha de actualización</strong> del sitio, con corte al
+                <strong>26/01/2025</strong>, corresponde al año <strong>2025</strong>. A nivel de
+                <strong>footer</strong>, se
+                identifican <strong>áreas de mejora</strong>, principalmente relacionadas con la
+                <strong>sobrecarga visual</strong> y la <strong>legibilidad</strong>.
+
+                Se recomienda <strong>eliminar el fondo degradado</strong>, ya que introduce
+                <strong>ruido visual</strong> y dificulta la lectura, así como
+                <strong>sintetizar el contenido</strong> para reducir la
+                <strong>carga cognitiva</strong>. Adicionalmente, el uso de
+                <strong>texto negro sobre fondos degradados</strong> presenta
+                <strong>problemas de contraste</strong> que afectan el
+                <strong>cumplimiento de lineamientos de accesibilidad</strong>.
+            </p>
+        </section>
+
+        <section class="case-section" tabindex="0">
+            <h2 data-i18n="casePerformanceTitle">Desempeño general</h2>
+            <img src="https://github.com/Hozkr/Assets/blob/main/Simi/Desempeno.webp?raw=true"
+                alt="Wireframes del proyecto">
+            <p data-i18n="casePerformanceTitle1" tabindex="0">
+                Existen diversos factores que explican el <strong>desempeño general del sitio</strong>, reflejado en una
+                puntuación
+                de <strong>58 en Performance</strong>, <strong>74 en Accessibility</strong> y
+                <strong>77 en Best Practices</strong>. En términos de rendimiento, el principal impacto proviene de la
+                <strong>carga simultánea de información</strong>, lo que hace necesario optimizar la
+                <strong>presentación y priorización del contenido</strong>.
+
+                En accesibilidad, se identificaron hallazgos como <strong>imágenes sin <em>alt text</em></strong>,
+                <strong>elementos no navegables por teclado</strong> y limitaciones de
+                <strong>compatibilidad con lectores de pantalla</strong>, lo que restringe el acceso a usuarios con
+                <strong>discapacidad visual</strong>.
+
+                Por último, las observaciones en <strong>Best Practices</strong> están asociadas a
+                <strong>errores detectados en consola</strong> durante el escaneo con
+                <strong>Lighthouse</strong>, impactando la
+                <strong>estabilidad</strong> y la
+                <strong>calidad técnica percibida</strong> del sitio.
+            </p>
+
+        </section>
+
+        <section class="case-section">
+            <h2 data-i18n="caseFinalTitle" tabindex="0">Comentarios finales</h2>
+
+            <p data-i18n="caseFinalTitle1" tabindex="0">
+                Finalmente, como comentarios adicionales, este ejercicio no busca desmeritar el trabajo de los
+                <strong>equipos de diseño y desarrollo</strong>. Los hallazgos corresponden a un ejercicio de
+                <strong>QA Visual y Funcional con enfoque en UX</strong>, orientado a la identificación de
+                <strong>áreas de mejora</strong> y a la generación de <strong>observaciones constructivas</strong>.
+
+                El sitio presenta <strong>oportunidades de mejora significativas y de rápida corrección</strong>,
+                especialmente en la <strong>simplificación y priorización de la información</strong>, la
+                <strong>optimización del motor y barra de búsqueda</strong>, la
+                <strong>estructura del DOM</strong> y la asignación de
+                <strong><em>alt text</em></strong> a elementos estáticos o de baja variabilidad.
+
+                Si bien herramientas automatizadas como <strong>Lighthouse</strong> aportan una
+                <strong>referencia técnica inicial</strong>, no evalúan aspectos clave como
+                <strong>flujos reales de navegación</strong>, <strong>user personas</strong> ni
+                <strong>puntos de fricción</strong> asociados a la experiencia de usuario.
+
+                En este contexto, se recomienda como siguiente paso una
+                <strong>auditoría integral de UX y funcionalidad</strong>, que permita abordar de forma estructurada
+                los hallazgos actuales y <strong>prevenir la recurrencia de problemas</strong> que podrían seguir
+                impactando la <strong>experiencia</strong> y la <strong>percepción del sitio</strong>.
+            </p>
+
         </section>
 
     </section>
@@ -194,8 +314,8 @@
     <footer>
         <div class="footer-content">
             <div class="left-section">
-                <p class="collaboration-text" tabindex="0">¿Te interesa colaborar?</p>
-                <h1 class="collaboration-text" tabindex="0">Cuéntamelo aquí</h1>
+                <p class="collaboration-text" tabindex="0" data-i18n="collaboration-text">¿Te interesa colaborar?</p>
+                <h1 class="collaboration-text" tabindex="0" data-i18n="collaboration-text2">Cuéntamelo aquí</h1>
                 <div class="social-buttons">
                     <a href="mailto:Oscar_LoRa@outlook.com" class="outline-btn" tabindex="0">Correo</a>
                     <a href="https://www.linkedin.com/in/oscar-l%C3%B3pez-a6066622b/" target="_blank"
@@ -207,7 +327,7 @@
             <div class="right-section">
 
                 <div class="credits">
-                    <p tabindex="0">Diseñado y desarrollado por: Oscar López</p>
+                    <p tabindex="0" data-i18n="credits">Diseñado y desarrollado por: Oscar López</p>
                 </div>
             </div>
         </div>
@@ -236,10 +356,11 @@
         </div>
     </div>
 
+
+
     <script src="js/main.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/idioma.js"></script>
-    <script src="js/ojosgato.js"></script>
     <script src="js/hoverbutton.js"></script>
 </body>
 

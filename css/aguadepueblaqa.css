@@ -288,7 +288,7 @@ section {
     font-size: 0.8rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #f0f0f0;
+    color: #ebebeb;
     margin: 0;
 }
 
@@ -302,7 +302,7 @@ section {
     font-family: var(--font-body);
     font-size: 0.7rem;
     line-height: 1.4;
-    color: #ffefef;
+    color: #e2e2e2;
     opacity: 0.8;
 }
 
@@ -320,6 +320,8 @@ section {
         max-width: 240px;
     }
 }
+
+
 
 /* =========================
    CASE SECTION
@@ -341,6 +343,9 @@ section {
 /* =========================
    IFRAME / PROTOTIPO
 ========================= */
+/* =========================
+PROJECT EMBED
+========================= */
 .project-embed {
     width: 100%;
     min-height: 80vh;
@@ -359,12 +364,39 @@ section {
 }
 
 
+/* Iframe */
 .project-embed iframe {
-    width: 80%;
-    max-width: 900px;
-    height: 100%;
+    width: 100%;
+    max-width: 960px;
+    height: 70vh;
+
+
     border: none;
     border-radius: 16px;
+
+
+    background-color: #1e1e1e;
+}
+
+
+/* Fallback */
+.pdf-fallback {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: #8a8a8a;
+    text-align: center;
+    margin: 0;
+}
+
+
+.pdf-fallback a {
+    color: #ff8c00;
+    text-decoration: none;
+}
+
+
+.pdf-fallback a:hover {
+    text-decoration: underline;
 }
 
 /* =========================
@@ -438,30 +470,20 @@ section {
 /* =========================
    RESPONSIVE
 ========================= */
+
 @media (max-width: 768px) {
-    .project-embed iframe {
-        width: 95%;
+    .project-embed {
+        padding: 3rem 1.5rem;
     }
 
-    .case-nav {
-        display: flex;
-        justify-content: space-between;
+
+    .project-embed iframe {
+        height: 60vh;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* ---------- FOOTER ---------- */
+
 footer {
     width: 100%;
     background-color: #171717;
@@ -520,6 +542,38 @@ footer {
     opacity: 0.75;
     text-align: right;
 }
+
+/* =========================
+   FOOTER
+   ========================= */
+@media (max-width: 900px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right-section {
+        align-items: center;
+    }
+
+    .credits {
+        position: static;
+        margin-top: 2rem;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .outline-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 
 
 /* =========================
